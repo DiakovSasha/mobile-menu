@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile menu</title>
+    <link
+      rel="shortcut icon"
+      href="/free-icon-burger-5787016.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#!">L<span class="logo__letter">O</span>GO</a>
+        <nav class="nav">
+          <button
+            type="button"
+            class="nav__btn"
+            data-menu-button
+            aria-expanded="true"
+            aria-controls="menu__container"
+          >
+            <svg
+              class="button__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon__cross" href="/sprite.svg#cross2"></use>
+              <use class="icon__menu" href="/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <div class="menu__container" data-menu id="menu__container">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="">About</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Contacts</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Reviews</a>
+              </li>
+            </ul>
+            <ul class="socials">
+              <li class="social__item">
+                <a class="social__link" href=""></a> Instagram
+              </li>
+              <li class="social__item">
+                <a social__link href=""></a> LinkedIn
+              </li>
+              <li class="social__item">
+                <a social__link href=""></a> Facebook
+              </li>
+              <li class="social__item"><a social__link href=""></a> Twitter</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- <div class="mobile__menu" data-menu>
+      <div class="content"></div>
+    </div> -->
+    <script src="/mobile.js"></script>
+  </body>
+</html>
