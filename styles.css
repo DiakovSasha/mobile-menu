@@ -19,12 +19,35 @@ body {
 }
 .logo__letter {
   color: #008000;
-  font-size: 33px;
+  font-size: 35px;
+}
+.logo:hover {
+  animation: bounce 1s;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 .header {
   position: relative;
-  
+  padding: 20px;
   border-bottom: 2px solid #0f9d58;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .nav {
   display: flex;
@@ -57,7 +80,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-  margin-right: 20px;
+
   z-index: 9999;
 }
 @media screen and (min-width: 768px) {
@@ -78,7 +101,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px 0;
 }
 @media screen and (max-width: 767px) {
   .menu__container {
@@ -87,10 +109,14 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
+    padding: 25px;
   }
 }
-.menu__container.is-open .nav__list {
-  margin-bottom: 20px;
+
+@media screen and (max-width: 767px) {
+  .menu__container.is-open .nav__list {
+    margin-bottom: 20px;
+  }
 }
 .socials {
   display: none;
@@ -110,15 +136,7 @@ body {
 .social__item:not(:last-child) {
   margin-right: 20px;
 }
-.social__link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 200px;
-  width: 1px;
-  height: 10px;
-  background-color: aqua;
-}
+
 .icon__menu {
   fill: #008000;
   width: 50px;
